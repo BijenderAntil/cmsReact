@@ -1,0 +1,17 @@
+.autosuggestUl{
+    display: block;
+    list-style: none;
+    background: #ccc;
+    position: absolute;
+width: 200px;
+border: 1px solid burlywood;
+margin-left: 38%;
+}
+.autosuggestUl li{
+    border-bottom: 1px solid red;
+}
+
+form div{
+    position: relative;
+    margin-bottom: 10%;
+}
