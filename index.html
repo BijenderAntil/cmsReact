@@ -65,3 +65,99 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 --
 ==
 git remote set-url origin git@github.com:bijenderphp/cmsReact.git
+
+
+git remote add first https://github.com/bijenderphp/cmsReact.git
+
+git branch --show-current
+
+git branch --delete --remotes origin/branch-name
+git remote -v
+
+first   https://github.com/bijenderphp/cmsReact.git (fetch)
+first   https://github.com/bijenderphp/cmsReact.git (push)
+mohit   https://github.com/bijenderphp/MoviesListReact.git (fetch)
+mohit   https://github.com/bijenderphp/MoviesListReact.git (push)
+origin  git@github.com:bijenderphp/cmsReact.git (fetch)
+origin  git@github.com:bijenderphp/cmsReact.git (push)
+rep1    https://github.com/bijenderphp/MoviesListReact.git (fetch)
+rep1    https://github.com/bijenderphp/MoviesListReact.git (push)
+
+Executive Summary
+
+git push -d <remote_name> <branchname>
+git branch -d <branchname>
+
+Note: In most cases, <remote_name> will be origin.
+Delete Local Branch
+
+To delete the local branch use one of the following:
+
+git branch -d <branch_name>
+git branch -D <branch_name>
+
+
+    ssh-keygen -t ed25519 -C "your_email@example.com"
+    ssh-keygen -t ed25519 -C "php.bijender@gmail.com"
+
+
+
+    ssh-keygen
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/c/Users/mohit/.ssh/id_rsa):
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved in /c/Users/mohit/.ssh/id_rsa.
+    Your public key has been saved in /c/Users/mohit/.ssh/id_rsa.pub.
+    The key fingerprint is:
+    SHA256:rZTXWyEn49hGESXLdStaDktivnVYWp4wtNuoTgpkKAQ mohit@DESKTOP-056HB5C
+    The key's randomart image is:
+    +---[RSA 3072]----+
+    
+
+    ls -al ~/.ssh
+total 22
+drwxr-xr-x 1 mohit 197609    0 Feb  7 22:10 ./
+drwxr-xr-x 1 mohit 197609    0 Feb  7 20:42 ../
+-rw-r--r-- 1 mohit 197609 2610 Feb  7 22:10 id_rsa
+-rw-r--r-- 1 mohit 197609  575 Feb  7 22:10 id_rsa.pub
+
+
+==================================
+
+ ssh-keygen -t rsa -b 4096 -C "php.bijender@gmail.com"
+
+ Before connect to the git you should Generate ssh key:- 
+
+ $ ssh-keygen -t rsa -b 4096 -C "php.bijender@gmail.com"
+
+
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/mohit/.ssh/id_rsa):
+/c/Users/mohit/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/mohit/.ssh/id_rsa.
+Your public key has been saved in /c/Users/mohit/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:W8iQP6DfPGvXmxRi3BMRFFtooMPJ0LgEjZ+0IRFYi+0 php.bijender@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|   o=*.o  .o=+.  |
+|  .oo.*=.o  o+   |
+|  . o=+=*  .o    |
+|   . .== + . .   |
+|    E   S = +    |
+|     . o = . o   |
+|      . =  ..    |
+|        .o....   |
+|       ...  o.   |
++----[SHA256]-----+
+
+ SHA256:W8iQP6DfPGvXmxRi3BMRFFtooMPJ0LgEjZ+0IRFYi+0 
+
+ How to ignore folder using git:- 
+ git rm --cached FILENAME
+ git rm --cached ./node_modules/*
